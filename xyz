@@ -3,3 +3,8 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 --member=serviceAccount:$(gcloud projects describe $PROJECT_ID \
 --format="value(projectNumber)")@cloudbuild.gserviceaccount.com --role="roles/container.developer"
 
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Build%20Infrastructure%20with%20Terraform%20on%20Google%20Cloud%20Challenge%20Lab/gsp345.sh
+
+sudo chmod +x gsp345.sh
+
+./gsp345.sh
